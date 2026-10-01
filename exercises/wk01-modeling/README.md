@@ -29,7 +29,7 @@ Derived the Laplace Transform equations for teh two systems from their ODs to fi
 ![mass-spring-damper-step-response](mass-spring-damper-step-response.png)
 
 ### DC Motor Step Response
-![dc-motor-step-response](dc-motor-step-response)
+![dc-motor-step-response](dc-motor-step-response.png)
 
 ## Takeaways
 -
