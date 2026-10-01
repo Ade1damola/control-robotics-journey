@@ -11,6 +11,7 @@ b = 0.1 # N·m·s/rad
 k = 0.01 # V·s/rad
 R = 1 # Ω
 L = 0.5 # H
+V_0 = 1.0 # V
 
 # Building the Transfer Function
 num = [k]
@@ -25,7 +26,7 @@ t_tf, y_tf = control.step_response(G, t_axis) # this is solving the tf analytica
 def dc_motor(t, z):
     [theta, thetadot, i] = z
     
-    V = V0
+    V = V_0
     thetaddot = (k*i - b*thetadot) / J
     idot = (V - R*i - k*thetadot) / L
     return [thetadot, thetaddot, idot]
