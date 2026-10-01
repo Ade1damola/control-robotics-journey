@@ -1,4 +1,4 @@
-# A short Python script that defines the RHS of the ODEs as a function for solve_ivp
+# A short Python script that defines the RHS of the ODEs of the mass sprint damper system as a function for solve_ivp
 
 import control
 from scipy.integrate import solve_ivp
